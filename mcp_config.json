@@ -1,11 +1,25 @@
 {
   "mcpServers": {
-    "MySkills": {
+    "orchestra": {
+      "command": "python",
+      "args": ["-m", "orchestra.server"],
+      "cwd": "C:\\Users\\dasbl\\PycharmProjects\\Mini0nz\\orchestra",
+      "env": {
+        "ORCHESTRA_STATE_DIR": ".orchestra",
+        "ORCHESTRA_AGENT": "claude"
+      }
+    },
+    "gemini-cli": {
       "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-script", 
-               "--path", "c:\\Users\\dasbl\\PycharmProjects\\Mini0nz\\.skills\\gemini.agent.wrapper.sh",
-               "--path", "c:\\Users\\dasbl\\PycharmProjects\\Mini0nz\\.skills\\copilot.agent.wrapper.sh",
-               "--path", "c:\\Users\\dasbl\\PycharmProjects\\Mini0nz\\.skills\\codex.agent.wrapper.sh"]
+      "args": ["-y", "gemini-mcp-tool"]
+    },
+    "codex-cli": {
+      "command": "npx",
+      "args": ["-y", "codex-cli-mcp-tool"]
+    },
+    "copilot": {
+      "command": "npx",
+      "args": ["-y", "@willianpaiva/copilot-mcp-server"]
     }
   }
 }
