@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "MySkills": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-script", 
+               "--path", "c:\\Users\\dasbl\\PycharmProjects\\Mini0nz\\.skills\\gemini.agent.wrapper.sh",
+               "--path", "c:\\Users\\dasbl\\PycharmProjects\\Mini0nz\\.skills\\copilot.agent.wrapper.sh",
+               "--path", "c:\\Users\\dasbl\\PycharmProjects\\Mini0nz\\.skills\\codex.agent.wrapper.sh"]
+    }
+  }
+}
